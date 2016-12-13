@@ -1,0 +1,195 @@
+FullFilePath,FileTypes,CurrentDirectoryName,SeriesName,AllFileList,CouponName,Series,Panel,Coupon
+D:/Mock_dvds/DISTRIBUTION_STATEMENT_C.txt,Text,D:/Mock_dvds,,DISTRIBUTION_STATEMENT_C.txt,,,,
+D:/Mock_dvds/README.txt,Text,D:/Mock_dvds,,README.txt,,,,
+D:/Mock_dvds/02_DOE_I/DISTRIBUTION_STATEMENT_C.txt,Text,D:/Mock_dvds/02_DOE_I,,DISTRIBUTION_STATEMENT_C.txt,,,,
+D:/Mock_dvds/02_DOE_I/DOE_I_SUMMARY.xlsx,Excel,D:/Mock_dvds/02_DOE_I,,DOE_I_SUMMARY.xlsx,,,,
+D:/Mock_dvds/02_DOE_I/DATA/02-001-01p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-01p.csv,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/DATA/02-001-01test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-01test.csv,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/DATA/02-001-02p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-02p.csv,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/DATA/02-001-02test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-02test.csv,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/DATA/02-001-03p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-03p.csv,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/DATA/02-001-03test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-03test.csv,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/DATA/02-001-04p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-04p.csv,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/DATA/02-001-04test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-04test.csv,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/DATA/02-001-05p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-05p.csv,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/DATA/02-001-05test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-05test.csv,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/DATA/02-001-06p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-06p.csv,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/DATA/02-001-06test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-001-06test.csv,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/DATA/02-002-01p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-01p.csv,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/DATA/02-002-01test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-01test.csv,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/DATA/02-002-02p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-02p.csv,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/DATA/02-002-02test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-02test.csv,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/DATA/02-002-03p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-03p.csv,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/DATA/02-002-03test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-03test.csv,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/DATA/02-002-04p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-04p.csv,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/DATA/02-002-04test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-04test.csv,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/DATA/02-002-05p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-05p.csv,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/DATA/02-002-05test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-05test.csv,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/DATA/02-002-06p.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-06p.csv,02-002-06,02,002,06
+D:/Mock_dvds/02_DOE_I/DATA/02-002-06test.csv,CSV,D:/Mock_dvds/02_DOE_I/DATA,,02-002-06test.csv,02-002-06,02,002,06
+D:/Mock_dvds/02_DOE_I/DATA/calculated.xls,Excel,D:/Mock_dvds/02_DOE_I/DATA,,calculated.xls,,,,
+D:/Mock_dvds/02_DOE_I/DATA/measured.xls,Excel,D:/Mock_dvds/02_DOE_I/DATA,,measured.xls,,,,
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-01.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-01.png,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-01_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-01_modes.png,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-01_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-01_pd.png,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-02.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-02.png,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-02_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-02_modes.png,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-02_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-02_pd.png,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-03.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-03.png,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-03_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-03_modes.png,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-03_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-03_pd.png,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-04.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-04.png,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-04_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-04_modes.png,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-04_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-04_pd.png,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-05.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-05.png,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-05_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-05_modes.png,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-05_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-05_pd.png,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-06.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-06.png,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-06_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-06_modes.png,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/IMAGES/02-001-06_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-001-06_pd.png,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-01.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-01.png,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-01_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-01_modes.png,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-01_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-01_pd.png,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-02.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-02.png,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-02_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-02_modes.png,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-02_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-02_pd.png,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-03.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-03.png,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-03_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-03_modes.png,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-03_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-03_pd.png,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-04.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-04.png,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-04_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-04_modes.png,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-04_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-04_pd.png,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-05.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-05.png,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-05_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-05_modes.png,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-05_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-05_pd.png,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-06.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-06.png,02-002-06,02,002,06
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-06_modes.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-06_modes.png,02-002-06,02,002,06
+D:/Mock_dvds/02_DOE_I/IMAGES/02-002-06_pd.png,Image,D:/Mock_dvds/02_DOE_I/IMAGES,,02-002-06_pd.png,02-002-06,02,002,06
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/DOE_I_SUMMARY_2.xlsx,Excel,D:/Mock_dvds/02_DOE_I/PHASE_TWO,,DOE_I_SUMMARY_2.xlsx,,,,
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,01-01-01_modes.png,01-01-01,01,01,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,01-01-01_regions.png,01-01-01,01,01,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,01-01-01_truncated.png,01-01-01,01,01,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-01.png,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-01_modes.png,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-01_regions.png,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-01_truncated.png,02-001-01,02,001,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-02_modes.png,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-02_regions.png,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-02_truncated.png,02-001-02,02,001,02
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-03_modes.png,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-03_regions.png,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-03_truncated.png,02-001-03,02,001,03
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-04_modes.png,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-04_regions.png,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-04_truncated.png,02-001-04,02,001,04
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-05_modes.png,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-05_regions.png,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-05_truncated.png,02-001-05,02,001,05
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-06_modes.png,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-06_regions.png,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-001-06_truncated.png,02-001-06,02,001,06
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-01_modes.png,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-01_regions.png,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-01_truncated.png,02-002-01,02,002,01
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-02_modes.png,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-02_regions.png,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-02_truncated.png,02-002-02,02,002,02
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-03_modes.png,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-03_regions.png,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-03_truncated.png,02-002-03,02,002,03
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-04_modes.png,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-04_regions.png,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-04_truncated.png,02-002-04,02,002,04
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-05_modes.png,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-05_regions.png,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-05_truncated.png,02-002-05,02,002,05
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_modes.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-06_modes.png,02-002-06,02,002,06
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_regions.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-06_regions.png,02-002-06,02,002,06
+D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_truncated.png,Image,D:/Mock_dvds/02_DOE_I/PHASE_TWO/IMAGES,,02-002-06_truncated.png,02-002-06,02,002,06
+D:/Mock_dvds/06_DOE_II/DISTRIBUTION_STATEMENT_C.txt,Text,D:/Mock_dvds/06_DOE_II,,DISTRIBUTION_STATEMENT_C.txt,,,,
+D:/Mock_dvds/06_DOE_II/DOE_II_SUMMARY.xlsx,Excel,D:/Mock_dvds/06_DOE_II,,DOE_II_SUMMARY.xlsx,,,,
+D:/Mock_dvds/06_DOE_II/DATA/01-01-01p.csv,CSV,D:/Mock_dvds/06_DOE_II/DATA,,01-01-01p.csv,01-01-01,01,01,01
+D:/Mock_dvds/06_DOE_II/DATA/01-01-01test.csv,CSV,D:/Mock_dvds/06_DOE_II/DATA,,01-01-01test.csv,01-01-01,01,01,01
+D:/Mock_dvds/06_DOE_II/DATA/calculated.xls,Excel,D:/Mock_dvds/06_DOE_II/DATA,,calculated.xls,,,,
+D:/Mock_dvds/06_DOE_II/DATA/measured.xls,Excel,D:/Mock_dvds/06_DOE_II/DATA,,measured.xls,,,,
+D:/Mock_dvds/06_DOE_II/IMAGES/01-01-01.png,Image,D:/Mock_dvds/06_DOE_II/IMAGES,,01-01-01.png,01-01-01,01,01,01
+D:/Mock_dvds/06_DOE_II/IMAGES/01-01-01_modes.png,Image,D:/Mock_dvds/06_DOE_II/IMAGES,,01-01-01_modes.png,01-01-01,01,01,01
+D:/Mock_dvds/06_DOE_II/IMAGES/01-01-01_pd.png,Image,D:/Mock_dvds/06_DOE_II/IMAGES,,01-01-01_pd.png,01-01-01,01,01,01
+D:/Mock_dvds/06_DOE_II/PHASE_TWO/DOE_II_SUMMARY_2.xlsx,Excel,D:/Mock_dvds/06_DOE_II/PHASE_TWO,,DOE_II_SUMMARY_2.xlsx,,,,
+D:/Mock_dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_modes.png,Image,D:/Mock_dvds/06_DOE_II/PHASE_TWO/IMAGES,,01-01-01_modes.png,01-01-01,01,01,01
+D:/Mock_dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_regions.png,Image,D:/Mock_dvds/06_DOE_II/PHASE_TWO/IMAGES,,01-01-01_regions.png,01-01-01,01,01,01
+D:/Mock_dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_truncated.png,Image,D:/Mock_dvds/06_DOE_II/PHASE_TWO/IMAGES,,01-01-01_truncated.png,01-01-01,01,01,01
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/DOE_IV_REWORK_SUMMARY.xlsx,Excel,D:/Mock_dvds/10_DOE_IV_R1_REWORK,Series 10,DOE_IV_REWORK_SUMMARY.xlsx,,,,
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA/01-01-1-PRE.csv,CSV,D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA,Series 10,01-01-1-PRE.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA/01-01-1-TEST.csv,CSV,D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA,Series 10,01-01-1-TEST.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA/calculated.xls,Excel,D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA,Series 10,calculated.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA/measured.xls,Excel,D:/Mock_dvds/10_DOE_IV_R1_REWORK/DATA,Series 10,measured.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1.png,Image,D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES,Series 10,01-01-1.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_modes.png,Image,D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES,Series 10,01-01-1_modes.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_regions.png,Image,D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES,Series 10,01-01-1_regions.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_truncated.png,Image,D:/Mock_dvds/10_DOE_IV_R1_REWORK/IMAGES,Series 10,01-01-1_truncated.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/PLOTS/01-01-1_pd.png,Image,D:/Mock_dvds/10_DOE_IV_R1_REWORK/PLOTS,Series 10,01-01-1_pd.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA/01-01-1_adjpd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA,Series 10,01-01-1_adjpd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA/01-01-1_pd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA,Series 10,01-01-1_pd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/DOE_IV_R2_SUMMARY.xlsx,Excel,D:/Mock_dvds/10_DOE_IV_R2,Series 10,DOE_IV_R2_SUMMARY.xlsx,,,,
+D:/Mock_dvds/10_DOE_IV_R2/DATA/01-01-1-PRE.csv,CSV,D:/Mock_dvds/10_DOE_IV_R2/DATA,Series 10,01-01-1-PRE.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/DATA/01-01-1-TEST.csv,CSV,D:/Mock_dvds/10_DOE_IV_R2/DATA,Series 10,01-01-1-TEST.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/DATA/calculated.xls,Excel,D:/Mock_dvds/10_DOE_IV_R2/DATA,Series 10,calculated.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R2/DATA/measured.xls,Excel,D:/Mock_dvds/10_DOE_IV_R2/DATA,Series 10,measured.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R2/IMAGES/01-01-1.png,Image,D:/Mock_dvds/10_DOE_IV_R2/IMAGES,Series 10,01-01-1.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/IMAGES/01-01-1_modes.png,Image,D:/Mock_dvds/10_DOE_IV_R2/IMAGES,Series 10,01-01-1_modes.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/IMAGES/01-01-1_regions.png,Image,D:/Mock_dvds/10_DOE_IV_R2/IMAGES,Series 10,01-01-1_regions.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/IMAGES/01-01-1_truncated.png,Image,D:/Mock_dvds/10_DOE_IV_R2/IMAGES,Series 10,01-01-1_truncated.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/PLOTS/01-01-1_pd.png,Image,D:/Mock_dvds/10_DOE_IV_R2/PLOTS,Series 10,01-01-1_pd.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA/01-01-1_adjpd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA,Series 10,01-01-1_adjpd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA/01-01-1_pd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA,Series 10,01-01-1_pd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/DOE_IV_R3_SUMMARY.xlsx,Excel,D:/Mock_dvds/10_DOE_IV_R3,Series 10,DOE_IV_R3_SUMMARY.xlsx,,,,
+D:/Mock_dvds/10_DOE_IV_R3/DATA/01-01-1-PRE.csv,CSV,D:/Mock_dvds/10_DOE_IV_R3/DATA,Series 10,01-01-1-PRE.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/DATA/01-01-1-TEST.csv,CSV,D:/Mock_dvds/10_DOE_IV_R3/DATA,Series 10,01-01-1-TEST.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/DATA/calculated.xls,Excel,D:/Mock_dvds/10_DOE_IV_R3/DATA,Series 10,calculated.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R3/DATA/measured.xls,Excel,D:/Mock_dvds/10_DOE_IV_R3/DATA,Series 10,measured.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R3/IMAGES/01-01-1.png,Image,D:/Mock_dvds/10_DOE_IV_R3/IMAGES,Series 10,01-01-1.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/IMAGES/01-01-1_modes.png,Image,D:/Mock_dvds/10_DOE_IV_R3/IMAGES,Series 10,01-01-1_modes.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/IMAGES/01-01-1_regions.png,Image,D:/Mock_dvds/10_DOE_IV_R3/IMAGES,Series 10,01-01-1_regions.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/IMAGES/01-01-1_truncated.png,Image,D:/Mock_dvds/10_DOE_IV_R3/IMAGES,Series 10,01-01-1_truncated.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/PLOTS/01-01-1_pd.png,Image,D:/Mock_dvds/10_DOE_IV_R3/PLOTS,Series 10,01-01-1_pd.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA/01-01-1_adjpd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA,Series 10,01-01-1_adjpd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA/01-01-1_pd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA,Series 10,01-01-1_pd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/DOE_IV_R4_SUMMARY.xlsx,Excel,D:/Mock_dvds/10_DOE_IV_R4,Series 10,DOE_IV_R4_SUMMARY.xlsx,,,,
+D:/Mock_dvds/10_DOE_IV_R4/DATA/01-01-1-PRE.csv,CSV,D:/Mock_dvds/10_DOE_IV_R4/DATA,Series 10,01-01-1-PRE.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/DATA/01-01-1-TEST.csv,CSV,D:/Mock_dvds/10_DOE_IV_R4/DATA,Series 10,01-01-1-TEST.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/DATA/calculated.xls,Excel,D:/Mock_dvds/10_DOE_IV_R4/DATA,Series 10,calculated.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R4/DATA/measured.xls,Excel,D:/Mock_dvds/10_DOE_IV_R4/DATA,Series 10,measured.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R4/IMAGES/01-01-1.png,Image,D:/Mock_dvds/10_DOE_IV_R4/IMAGES,Series 10,01-01-1.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/IMAGES/01-01-1_modes.png,Image,D:/Mock_dvds/10_DOE_IV_R4/IMAGES,Series 10,01-01-1_modes.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/IMAGES/01-01-1_regions.png,Image,D:/Mock_dvds/10_DOE_IV_R4/IMAGES,Series 10,01-01-1_regions.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/IMAGES/01-01-1_truncated.png,Image,D:/Mock_dvds/10_DOE_IV_R4/IMAGES,Series 10,01-01-1_truncated.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/PLOTS/01-01-1_pd.png,Image,D:/Mock_dvds/10_DOE_IV_R4/PLOTS,Series 10,01-01-1_pd.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA/01-01-1_adjpd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA,Series 10,01-01-1_adjpd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA/01-01-1_pd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA,Series 10,01-01-1_pd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/DOE_IV_R5_SUMMARY.xlsx,Excel,D:/Mock_dvds/10_DOE_IV_R5,Series 10,DOE_IV_R5_SUMMARY.xlsx,,,,
+D:/Mock_dvds/10_DOE_IV_R5/DATA/01-01-1-PRE.csv,CSV,D:/Mock_dvds/10_DOE_IV_R5/DATA,Series 10,01-01-1-PRE.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/DATA/01-01-1-TEST.csv,CSV,D:/Mock_dvds/10_DOE_IV_R5/DATA,Series 10,01-01-1-TEST.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/DATA/calculated.xls,Excel,D:/Mock_dvds/10_DOE_IV_R5/DATA,Series 10,calculated.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R5/DATA/measured.xls,Excel,D:/Mock_dvds/10_DOE_IV_R5/DATA,Series 10,measured.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R5/IMAGES/01-01-1.png,Image,D:/Mock_dvds/10_DOE_IV_R5/IMAGES,Series 10,01-01-1.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/IMAGES/01-01-1_modes.png,Image,D:/Mock_dvds/10_DOE_IV_R5/IMAGES,Series 10,01-01-1_modes.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/IMAGES/01-01-1_regions.png,Image,D:/Mock_dvds/10_DOE_IV_R5/IMAGES,Series 10,01-01-1_regions.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/IMAGES/01-01-1_truncated.png,Image,D:/Mock_dvds/10_DOE_IV_R5/IMAGES,Series 10,01-01-1_truncated.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/PLOTS/01-01-1_pd.png,Image,D:/Mock_dvds/10_DOE_IV_R5/PLOTS,Series 10,01-01-1_pd.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA/01-01-1_adjpd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA,Series 10,01-01-1_adjpd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA/01-01-1_pd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA,Series 10,01-01-1_pd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/DOE_IV_R6_SUMMARY.xlsx,Excel,D:/Mock_dvds/10_DOE_IV_R6,Series 10,DOE_IV_R6_SUMMARY.xlsx,,,,
+D:/Mock_dvds/10_DOE_IV_R6/DATA/01-01-1-PRE.csv,CSV,D:/Mock_dvds/10_DOE_IV_R6/DATA,Series 10,01-01-1-PRE.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/DATA/01-01-1-TEST.csv,CSV,D:/Mock_dvds/10_DOE_IV_R6/DATA,Series 10,01-01-1-TEST.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/DATA/calculated.xls,Excel,D:/Mock_dvds/10_DOE_IV_R6/DATA,Series 10,calculated.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R6/DATA/measured.xls,Excel,D:/Mock_dvds/10_DOE_IV_R6/DATA,Series 10,measured.xls,,,,
+D:/Mock_dvds/10_DOE_IV_R6/IMAGES/01-01-1.png,Image,D:/Mock_dvds/10_DOE_IV_R6/IMAGES,Series 10,01-01-1.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/IMAGES/01-01-1_modes.png,Image,D:/Mock_dvds/10_DOE_IV_R6/IMAGES,Series 10,01-01-1_modes.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/IMAGES/01-01-1_regions.png,Image,D:/Mock_dvds/10_DOE_IV_R6/IMAGES,Series 10,01-01-1_regions.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/IMAGES/01-01-1_truncated.png,Image,D:/Mock_dvds/10_DOE_IV_R6/IMAGES,Series 10,01-01-1_truncated.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/PLOTS/01-01-1_pd.png,Image,D:/Mock_dvds/10_DOE_IV_R6/PLOTS,Series 10,01-01-1_pd.png,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA/01-01-1_adjpd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA,Series 10,01-01-1_adjpd.csv,01-01-1,01,01,1
+D:/Mock_dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA/01-01-1_pd.csv,CSV,D:/Mock_dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA,Series 10,01-01-1_pd.csv,01-01-1,01,01,1
+D:/Mock_dvds/DOE_III/DOE_III/DISTRIBUTION_STATEMENT_C.txt,Text,D:/Mock_dvds/DOE_III/DOE_III,,DISTRIBUTION_STATEMENT_C.txt,,,,
+D:/Mock_dvds/DOE_III/DOE_III/ReadMe.txt,Text,D:/Mock_dvds/DOE_III/DOE_III,,ReadMe.txt,,,,

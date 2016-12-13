@@ -1,0 +1,72 @@
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix setl:          <http://purl.org/twc/vocab/setl/> .
+@prefix csvw:          <http://www.w3.org/ns/csvw#> .
+@prefix pv:            <http://purl.org/net/provenance/ns#> .
+@prefix :              <http://example.com/setl/> .
+@prefix dmo:		   <http://dmo.org/terms> .
+@prefix xsd: 		   <http://www.w3.org/2001/XMLSchema#>.
+:table a csvw:Table, setl:Table;
+  csvw:delimiter ",";
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <graphDirectory.csv>;
+  ].
+
+
+<http://example.com/social> a void:Dataset;
+  prov:wasGeneratedBy [
+    a setl:Transform, setl:JSLDT;
+    prov:used :table;
+    setl:hasContext '''{
+  "foaf" : "http://xmlns.com/foaf/0.1/",
+  "dmo"  : "http://dmo.org/terms/",
+  "xsd"  : "http://www.w3.org/2001/XMLSchema#",
+  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+}''';
+
+    prov:value '''[
+
+ {
+  "@id": "dmo:{{row.currentDirectory}}",
+  "@type": "dmo:{{row.Depth}}", 
+  "rdfs:subClassof": "dmo:Directory",
+  "rdfs:Label": "{{row.currLabel}}",
+
+  "dmo:hasResult": [{
+  	"@if" : "not isempty(row.childDirectory)",
+    "@id" : "dmo:{{row.childDirectory}}", 
+    "rdfs:type" : "dmo:Result",
+    "rdfs:subClassof": "dmo:Directory"
+  }],
+
+  "dmo:hasFilesNum": [{
+  	"@value": "{{row.NumOfFilesInside}}",
+  	"@type": "xsd:integer"
+  	}],
+
+
+"dmo:hasFile": [{
+  	"@if" : "not isempty(row.FilePathsInsideCurr)",
+    "@for" : "fileName in row.FilePathsInsideCurr.split(',')",
+    "@do" : { "@id" : "dmo:{{fileName}}", "@type": "dmo:File"}
+  	}],
+
+
+  	"dmo:isResultOf": [{
+  	"@if" : "not isempty(row.parentDirectory)",
+    "@id" : "dmo:{{row.parentDirectory}}"
+  }] 
+
+}]'''].
+
+
+<graphDirectory.ttl> a pv:File;
+    dcterms:format "text/turtle";
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used <http://example.com/social> ;
+    ].

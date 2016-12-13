@@ -1,0 +1,964 @@
+@prefix dmo: <http://dmo.org/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dmo.org/Mock_Dvds/> a dmo:nan,
+        dmo:root ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/DISTRIBUTION_STATEMENT_C.txt>,
+        <http://dmo.org/Mock_Dvds/README.txt> ;
+    dmo:hasFilesNum 2 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/02_DOE_I>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6>,
+        <http://dmo.org/Mock_Dvds/DOE_III> ;
+    dmo:isResultOf <http://dmo.org/> ;
+    rdfs:Label "Mock_Dvds" ;
+    rdfs:subClassof "dmo:Directory" .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-01p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-01test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-02p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-02test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-03p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-03test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-04p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-04test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-05p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-05test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-06p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-06test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-01p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-01test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-02p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-02test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-03p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-03test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-04p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-04test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-05p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-05test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-06p.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-06test.csv>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DATA/measured.xls> ;
+    dmo:hasFilesNum 26 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/02_DOE_I> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-01p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-01test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-02p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-02test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-03p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-03test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-04p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-04test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-05p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-05test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-06p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-001-06test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-01p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-01test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-02p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-02test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-03p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-03test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-04p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-04test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-05p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-05test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-06p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/02-002-06test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DISTRIBUTION_STATEMENT_C.txt> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/DOE_I_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-01.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-01_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-01_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-02.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-02_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-02_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-03.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-03_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-03_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-04.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-04_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-04_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-05.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-05_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-05_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-06.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-06_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-06_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-01.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-01_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-01_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-02.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-02_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-02_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-03.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-03_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-03_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-04.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-04_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-04_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-05.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-05_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-05_pd.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-06.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-06_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-06_pd.png> ;
+    dmo:hasFilesNum 36 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/02_DOE_I> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-01.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-01_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-01_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-02.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-02_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-02_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-03.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-03_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-03_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-04.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-04_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-04_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-05.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-05_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-05_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-06.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-06_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-001-06_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-01.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-01_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-01_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-02.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-02_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-02_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-03.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-03_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-03_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-04.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-04_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-04_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-05.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-05_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-05_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-06.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-06_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES/02-002-06_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/DOE_I_SUMMARY_2.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_truncated.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_modes.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_regions.png>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_truncated.png> ;
+    dmo:hasFilesNum 40 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/01-01-01_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-01_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-02_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-03_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-04_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-05_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-001-06_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-01_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-02_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-03_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-04_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-05_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES/02-002-06_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/06_DOE_II/DATA/01-01-01p.csv>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/DATA/01-01-01test.csv>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/DATA/measured.xls> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/06_DOE_II> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/DATA/01-01-01p.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/DATA/01-01-01test.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/DISTRIBUTION_STATEMENT_C.txt> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/DOE_II_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES/01-01-01.png>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES/01-01-01_modes.png>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES/01-01-01_pd.png> ;
+    dmo:hasFilesNum 3 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/06_DOE_II> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES/01-01-01.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES/01-01-01_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES/01-01-01_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/DOE_II_SUMMARY_2.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_modes.png>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_regions.png>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_truncated.png> ;
+    dmo:hasFilesNum 3 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES/01-01-01_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/01-01-1-PRE.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/01-01-1-TEST.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/measured.xls> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/01-01-1-PRE.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/01-01-1-TEST.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DOE_IV_REWORK_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_modes.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_regions.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_truncated.png> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES/01-01-1_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/01-01-1_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA/01-01-1_adjpd.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA/01-01-1_pd.csv> ;
+    dmo:hasFilesNum 2 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS> ;
+    rdfs:Label "PLOT_DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA/01-01-1_adjpd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA/01-01-1_pd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/01-01-1-PRE.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/01-01-1-TEST.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/measured.xls> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R2> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/01-01-1-PRE.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/01-01-1-TEST.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DOE_IV_R2_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1_modes.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1_regions.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1_truncated.png> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R2> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES/01-01-1_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/01-01-1_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA/01-01-1_adjpd.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA/01-01-1_pd.csv> ;
+    dmo:hasFilesNum 2 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS> ;
+    rdfs:Label "PLOT_DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA/01-01-1_adjpd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA/01-01-1_pd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/01-01-1-PRE.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/01-01-1-TEST.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/measured.xls> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R3> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/01-01-1-PRE.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/01-01-1-TEST.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DOE_IV_R3_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1_modes.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1_regions.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1_truncated.png> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R3> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES/01-01-1_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/01-01-1_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA/01-01-1_adjpd.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA/01-01-1_pd.csv> ;
+    dmo:hasFilesNum 2 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS> ;
+    rdfs:Label "PLOT_DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA/01-01-1_adjpd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA/01-01-1_pd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/01-01-1-PRE.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/01-01-1-TEST.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/measured.xls> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R4> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/01-01-1-PRE.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/01-01-1-TEST.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DOE_IV_R4_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1_modes.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1_regions.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1_truncated.png> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R4> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES/01-01-1_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/01-01-1_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA/01-01-1_adjpd.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA/01-01-1_pd.csv> ;
+    dmo:hasFilesNum 2 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS> ;
+    rdfs:Label "PLOT_DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA/01-01-1_adjpd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA/01-01-1_pd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/01-01-1-PRE.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/01-01-1-TEST.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/measured.xls> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R5> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/01-01-1-PRE.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/01-01-1-TEST.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DOE_IV_R5_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1_modes.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1_regions.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1_truncated.png> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R5> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES/01-01-1_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/01-01-1_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA/01-01-1_adjpd.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA/01-01-1_pd.csv> ;
+    dmo:hasFilesNum 2 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS> ;
+    rdfs:Label "PLOT_DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA/01-01-1_adjpd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA/01-01-1_pd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/01-01-1-PRE.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/01-01-1-TEST.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/calculated.xls>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/measured.xls> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R6> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/01-01-1-PRE.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/01-01-1-TEST.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/calculated.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA/measured.xls> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DOE_IV_R6_SUMMARY.xlsx> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1_modes.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1_regions.png>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1_truncated.png> ;
+    dmo:hasFilesNum 4 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R6> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1_modes.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1_regions.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES/01-01-1_truncated.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/01-01-1_pd.png> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA/01-01-1_adjpd.csv>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA/01-01-1_pd.csv> ;
+    dmo:hasFilesNum 2 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS> ;
+    rdfs:Label "PLOT_DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA/01-01-1_adjpd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA/01-01-1_pd.csv> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/DISTRIBUTION_STATEMENT_C.txt> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III/DATA> a dmo:result ;
+    dmo:hasFilesNum 0 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III> ;
+    rdfs:Label "DATA" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III/GLASS_ANALYSIS> a dmo:result ;
+    dmo:hasFilesNum 0 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III> ;
+    rdfs:Label "GLASS_ANALYSIS" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III/IMAGES> a dmo:result ;
+    dmo:hasFilesNum 0 ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III> ;
+    rdfs:Label "IMAGES" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/DOE_III/DOE_III/DISTRIBUTION_STATEMENT_C.txt> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/DOE_III/DOE_III/ReadMe.txt> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/README.txt> a dmo:File .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/DOE_I_SUMMARY_2.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO/IMAGES> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/02_DOE_I> ;
+    rdfs:Label "PHASE_TWO" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/DOE_II_SUMMARY_2.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO/IMAGES> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/06_DOE_II> ;
+    rdfs:Label "PHASE_TWO" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/01-01-1_pd.png> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS/PLOT_DATA> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK> ;
+    rdfs:Label "PLOTS" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/01-01-1_pd.png> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS/PLOT_DATA> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R2> ;
+    rdfs:Label "PLOTS" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/01-01-1_pd.png> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS/PLOT_DATA> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R3> ;
+    rdfs:Label "PLOTS" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/01-01-1_pd.png> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS/PLOT_DATA> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R4> ;
+    rdfs:Label "PLOTS" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/01-01-1_pd.png> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS/PLOT_DATA> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R5> ;
+    rdfs:Label "PLOTS" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/01-01-1_pd.png> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS/PLOT_DATA> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/10_DOE_IV_R6> ;
+    rdfs:Label "PLOTS" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/DOE_III> a dmo:experiment ;
+    dmo:hasFilesNum 0 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/DOE_III/DOE_III> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "DOE_III" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/DOE_III/DOE_III> a dmo:result ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/DISTRIBUTION_STATEMENT_C.txt>,
+        <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/ReadMe.txt> ;
+    dmo:hasFilesNum 2 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/DOE_III> ;
+    rdfs:Label "DOE_III" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/02_DOE_I> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/02_DOE_I/DISTRIBUTION_STATEMENT_C.txt>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/DOE_I_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 2 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/02_DOE_I/DATA>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/IMAGES>,
+        <http://dmo.org/Mock_Dvds/02_DOE_I/PHASE_TWO> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "02_DOE_I" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/06_DOE_II> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/06_DOE_II/DISTRIBUTION_STATEMENT_C.txt>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/DOE_II_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 2 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/06_DOE_II/DATA>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/IMAGES>,
+        <http://dmo.org/Mock_Dvds/06_DOE_II/PHASE_TWO> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "06_DOE_II" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DOE_IV_REWORK_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/DATA>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/IMAGES>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R1_REWORK/PLOTS> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "10_DOE_IV_R1_REWORK" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R2> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DOE_IV_R2_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/DATA>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/IMAGES>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R2/PLOTS> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "10_DOE_IV_R2" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R3> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DOE_IV_R3_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/DATA>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/IMAGES>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R3/PLOTS> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "10_DOE_IV_R3" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R4> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DOE_IV_R4_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/DATA>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/IMAGES>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R4/PLOTS> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "10_DOE_IV_R4" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R5> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DOE_IV_R5_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/DATA>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/IMAGES>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R5/PLOTS> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "10_DOE_IV_R5" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/10_DOE_IV_R6> a dmo:experiment ;
+    dmo:hasFile <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DOE_IV_R6_SUMMARY.xlsx> ;
+    dmo:hasFilesNum 1 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/DATA>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/IMAGES>,
+        <http://dmo.org/Mock_Dvds/10_DOE_IV_R6/PLOTS> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds> ;
+    rdfs:Label "10_DOE_IV_R6" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+
+<http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III> a dmo:result ;
+    dmo:hasFilesNum 0 ;
+    dmo:hasResult <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III/DATA>,
+        <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III/GLASS_ANALYSIS>,
+        <http://dmo.org/Mock_Dvds/DOE_III/DOE_III/12_DOE_III/IMAGES> ;
+    dmo:isResultOf <http://dmo.org/Mock_Dvds/DOE_III/DOE_III> ;
+    rdfs:Label "12_DOE_III" ;
+    rdfs:subClassof "dmo:Directory" ;
+    rdfs:type "dmo:Result" .
+

@@ -1,0 +1,6 @@
+pip3 install toposort
+pip3 install toposort
+pip3 install slugify
+pip3 install requests_testadapter
+pip3 install rdflib-jsonld
+
