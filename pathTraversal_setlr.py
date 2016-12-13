@@ -52,12 +52,13 @@ def getSeries(dirName):
     elif 'DOE_IV/' in dirName or 'DOE_IV_' in dirName:
         return 'Series 10'
 
-def setNamesOfFilesinParamsTTl(nameOfParamTTl, nameOfCSV, nameOfResultTTl):
+def setNamesOfFilesinParamsTTl(pathOfParamTTl, nameOfParamTTl, nameOfCSV, nameOfResultTTl):
     regexCSV = re.compile("^[ \t]*[p][r][o][v][:]+[0-9A-Za-z ]+[<]+[0-9A-Za-z]+[.][0-9A-Za-z]+[>][ ]*[;]")
     regexTTL = re.compile("^[ \t]*[<][ 0-9A-Za-z]+[.][t][t][l][>][ ]*[a][ ]*[p][v][:][0-9A-Za-z ]+[;]")
     replacementStringCSV = "prov:used <"+nameOfCSV+">;"
     replacementStringTTL = "<"+nameOfResultTTl+"> a pv:File;"
-    fp = open(nameOfParamTTl, "r")
+    results = os.path.join(os.path.dirname(__file__), "Results", nameOfParamTTl)
+    fp = open(pathOfParamTTl, "r")
     lines = fp.readlines()
     toWrite = ''
     l = []
@@ -78,7 +79,7 @@ def setNamesOfFilesinParamsTTl(nameOfParamTTl, nameOfCSV, nameOfResultTTl):
         l.append(line.rstrip())
         l.append("\n")
     fp.close()
-    fp = open(nameOfParamTTl, "w+")
+    fp = open(results, "w+")
     for i in l:
         fp.write(i)
     fp.close()
@@ -92,11 +93,17 @@ if __name__ == "__main__":
         print("Error in arguments passed.\nStandard input format:")
         print("$python3 <filename> <directorypath>")
         sys.exit()
+        
+    current_file_dir = os.path.dirname(__file__)
+    results = os.path.join(current_file_dir, "Results")
+    os.makedirs(results, exist_ok=True)
     datetime = time.strftime("%Y%m%d_%H%M%S")
     #nameOfCSV = 'graphFilePath_run_'+datetime+'.csv'
-    #nameOfDirectoryCsv = 'graphDirectory_run_'+datetime+'.csv'
+    #nameOfDirectoryCSV = 'graphDirectory_run_'+datetime+'.csv'
+    nameOfDirectoryCSV = 'graphDirectory.csv'
+    archiveCSV_file_path = os.path.join(current_file_dir, "Results", nameOfDirectoryCSV)
     nameOfInstanceCSV = 'graphFilePath.csv'
-    nameOfDirectoryCsv = 'graphDirectory.csv'
+    instanceCSV_file_path = os.path.join(current_file_dir, "Results", nameOfInstanceCSV)
     archiveTTL = "rawArchive.ttl"
     instanceLevelTTL = "instanceLevel.ttl"
     rootDirectory= sys.argv[1]
@@ -115,12 +122,12 @@ if __name__ == "__main__":
     
     
     #creating the CSV file=========================================================
-    with open(nameOfInstanceCSV, 'w',newline='') as csvFile:
+    with open(instanceCSV_file_path, 'w',newline='') as csvFile:
         w = csv.writer(csvFile)
         w.writerow(headerRow)
         headerforDir = ['currentDirectory','currLabel', 'Depth','parentDirectory','PLabel', 'childDirectory', 'CLabel', \
                         'NumOfFilesInside', 'NumofSubDir', 'SubDirLabels', 'FilePathsInsideCurr']
-        with open(nameOfDirectoryCsv, 'w',newline='') as csvFileD:
+        with open(archiveCSV_file_path, 'w',newline='') as csvFileD:
             ww = csv.writer(csvFileD)
             ww.writerow(headerforDir)#write the header row
             for dirName, subDirList, imFileList in os.walk(rootDirectory):
@@ -200,27 +207,29 @@ if __name__ == "__main__":
     #closing the CSV file=========================================================
     csvFile.close()
     csvFileD.close()
-	print("Conversion done.\nFilenames are --> ")
-	print("1. For Directory Structure  - {} \n2. For FileStructure Associated with domain knowledge - {}".format(nameOfDirectoryCsv,nameOfInstanceCSV))
-	print("Invoking Setlr")
-	#setlr.mainFunc("setlr_params.ttl")
-	setNamesOfFilesinParamsTTl("setlr_params_domain.ttl", nameOfDirectoryCsv, archiveTTL )
-	setNamesOfFilesinParamsTTl("setlr_params_instancelevel.ttl", nameOfInstanceCSV, instanceLevelTTL )
-	setlr.mainFunc("setlr_params_domain.ttl")
-	setlr.mainFunc("setlr_params_instancelevel.ttl")
-	sleep(5)
-	fp = open(instanceLevelTTL, "a")
-	fd = open(archiveTTL, "r")
-	# #join the two turtle files together
-	lines = fd.readlines()
-	for i in range(2):
-		fp.write("\n")
-	for line in lines:
-		if line[0]!='@':
-			fp.write(line)
-			fp.write("\n")
-	fp.close()
-	fd.close()
+    print("Conversion done.\nFilenames are --> ")
+    print("1. For Directory Structure  - {} \n2. For FileStructure Associated with domain knowledge - {}".format(nameOfDirectoryCSV,nameOfInstanceCSV))
+    print("Invoking Setlr")
+    #setlr.mainFunc("setlr_params.ttl")
+    archive_file_path = os.path.join(current_file_dir, "params", "setlr_params_domain.ttl")
+    instance_file_path = os.path.join(current_file_dir, "params", "setlr_params_instancelevel.ttl")
+    setNamesOfFilesinParamsTTl(archive_file_path, "setlr_params_domain.ttl",  nameOfDirectoryCSV, archiveTTL )
+    setNamesOfFilesinParamsTTl(instance_file_path, "setlr_params_instancelevel.ttl", nameOfInstanceCSV, instanceLevelTTL )
+    setlr.mainFunc(os.path.join(os.path.dirname(__file__), "Results", "setlr_params_domain.ttl"))
+    setlr.mainFunc(os.path.join(os.path.dirname(__file__), "Results", "setlr_params_instancelevel.ttl"))
+    sleep(5)
+    fp = open(os.path.join(os.path.dirname(__file__), "Results", instanceLevelTTL), "a")
+    fd = open(os.path.join(os.path.dirname(__file__), "Results", archiveTTL), "r")
+    # #join the two turtle files together
+    lines = fd.readlines()
+    for i in range(2):
+        fp.write("\n")
+    for line in lines:
+        if line[0]!='@':
+            fp.write(line)
+            fp.write("\n")
+    fp.close()
+    fd.close()
 	#==================================
-	print("Conversion done, rdf turtle file for folder structure : graphDirectory.ttl")
-	print("Conversion done, rdf turtle file for domain instance level map : graphDirectoryInstance.ttl")
+    print("Conversion done, rdf turtle file for folder structure : graphDirectory.ttl")
+    print("Conversion done, rdf turtle file for domain instance level map : graphDirectoryInstance.ttl")

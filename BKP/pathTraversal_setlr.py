@@ -3,6 +3,7 @@ import time
 import sys
 import re
 import setlr30 as setlr
+from time import sleep
 #==============================================================================
 def getFileTypes(fileName):
     if '.png' in fileName or '.jpg' in fileName:
@@ -52,28 +53,34 @@ def getSeries(dirName):
         return 'Series 10'
 
 def setNamesOfFilesinParamsTTl(nameOfParamTTl, nameOfCSV, nameOfResultTTl):
-    regexCSV = re.compile("^[p][r][o][v][:]+[0-9A-Za-z ]+[<]+[0-9A-Za-z]+[.][0-9A-Za-z]+[>][ ]*[;$]")
-    regexTTL = re.compile("^[<][ 0-9A-Za-z]+[.][t][t][l][>][ ]*[a][ ]*[p][v][:][0-9A-Za-z ]+[;$]")
+    regexCSV = re.compile("^[ \t]*[p][r][o][v][:]+[0-9A-Za-z ]+[<]+[0-9A-Za-z]+[.][0-9A-Za-z]+[>][ ]*[;]")
+    regexTTL = re.compile("^[ \t]*[<][ 0-9A-Za-z]+[.][t][t][l][>][ ]*[a][ ]*[p][v][:][0-9A-Za-z ]+[;]")
     replacementStringCSV = "prov:used <"+nameOfCSV+">;"
     replacementStringTTL = "<"+nameOfResultTTl+"> a pv:File;"
     fp = open(nameOfParamTTl, "r")
     lines = fp.readlines()
+    toWrite = ''
+    l = []
     for line in lines:
         try:
             matchArrayCSV = regexCSV.findall(line.strip())
-            line = line.replace(matchArrayCSV[0], replacementStringCSV)
+            if(matchArrayCSV[0] in line):
+                line = replacementStringCSV
         except:
             pass
         try:
             matchArrayTTL = regexTTL.findall(line.strip())
-            line = line.replace(matchArrayTTL[0], replacementStringTTL)
+            if(matchArrayTTL[0] in line):
+                line = replacementStringTTL
         except:
             pass
+        toWrite = toWrite.rstrip() + line.rstrip()
+        l.append(line.rstrip())
+        l.append("\n")
     fp.close()
     fp = open(nameOfParamTTl, "w+")
-    for line in lines:
-        fp.write(line)
-        print(line)
+    for i in l:
+        fp.write(i)
     fp.close()
 
 #==============================================================================
@@ -88,8 +95,10 @@ if __name__ == "__main__":
     datetime = time.strftime("%Y%m%d_%H%M%S")
     #nameOfCSV = 'graphFilePath_run_'+datetime+'.csv'
     #nameOfDirectoryCsv = 'graphDirectory_run_'+datetime+'.csv'
-    nameOfInstanceCSV = 'graphFilePath.csv'+'99'
-    nameOfDirectoryCsv = 'graphDirectory.csv' + '100'
+    nameOfInstanceCSV = 'graphFilePath.csv'
+    nameOfDirectoryCsv = 'graphDirectory.csv'
+    archiveTTL = "rawArchive.ttl"
+    instanceLevelTTL = "instanceLevel.ttl"
     rootDirectory= sys.argv[1]
     headerSetFlag = False
     cleanedList = []
@@ -191,24 +200,27 @@ if __name__ == "__main__":
     #closing the CSV file=========================================================
     csvFile.close()
     csvFileD.close()
-print("Conversion done.\nFilenames are --> ")
-print("1. For Directory Structure  - {} \n2. For FileStructure Associated with domain knowledge - {}".format(nameOfDirectoryCsv,nameOfInstanceCSV))
-print("Invoking Setlr")
-#setlr.mainFunc("setlr_params.ttl")
-setNamesOfFilesinParamsTTl("setlr_params_domain.ttl", nameOfDirectoryCsv, "rawArchive.ttl" )
-setNamesOfFilesinParamsTTl("setlr_params_instancelevel.ttl", nameOfInstanceCSV, "instanceLevel.ttl" )
-setlr.mainFunc("setlr_params_domain.ttl")
-setlr.mainFunc("setlr_params_instancelevel.ttl")
-# fp = open("setlr_params_instancelevel.ttl", 'a')
-# #join the two turtle files together
-# lines = fp.readlines()
-# for i in range(2):
-#     fp.write("\n")
-# for line in lines:
-#     if line[0]!='@':
-#         fp.write(line)
-#         fp.write("\n")
-# fp.close()
-#==================================
-print("Conversion done, rdf turtle file for folder structure : graphDirectory.ttl")
-print("Conversion done, rdf turtle file for domain instance level map : graphDirectoryInstance.ttl")
+	print("Conversion done.\nFilenames are --> ")
+	print("1. For Directory Structure  - {} \n2. For FileStructure Associated with domain knowledge - {}".format(nameOfDirectoryCsv,nameOfInstanceCSV))
+	print("Invoking Setlr")
+	#setlr.mainFunc("setlr_params.ttl")
+	setNamesOfFilesinParamsTTl("setlr_params_domain.ttl", nameOfDirectoryCsv, archiveTTL )
+	setNamesOfFilesinParamsTTl("setlr_params_instancelevel.ttl", nameOfInstanceCSV, instanceLevelTTL )
+	setlr.mainFunc("setlr_params_domain.ttl")
+	setlr.mainFunc("setlr_params_instancelevel.ttl")
+	sleep(5)
+	fp = open(instanceLevelTTL, "a")
+	fd = open(archiveTTL, "r")
+	# #join the two turtle files together
+	lines = fd.readlines()
+	for i in range(2):
+		fp.write("\n")
+	for line in lines:
+		if line[0]!='@':
+			fp.write(line)
+			fp.write("\n")
+	fp.close()
+	fd.close()
+	#==================================
+	print("Conversion done, rdf turtle file for folder structure : graphDirectory.ttl")
+	print("Conversion done, rdf turtle file for domain instance level map : graphDirectoryInstance.ttl")
