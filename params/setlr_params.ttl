@@ -23,9 +23,11 @@
     prov:used :table;
     setl:hasContext '''{
   "foaf" : "http://xmlns.com/foaf/0.1/",
-  "dmo"  : "http://dmo.org/terms/",
+  "dmo"  : "http://dmo.org/",
   "xsd"  : "http://www.w3.org/2001/XMLSchema#",
-  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+  "rdf"  : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "ore" : "http://www.openarchives.org/ore/terms/"
 }''';
 
     prov:value '''[
@@ -34,23 +36,32 @@
   "@id": "dmo:{{row.currentDirectory}}",
   "@type": "dmo:Directory",
   "rdfs:Label": "{{row.currLabel}}",
+  "rdf:type" : "ore:Aggregation" , 
+  
 
   "dmo:hasSubDirectory": [{
   	"@if" : "not isempty(row.childDirectory)",
-    "@id" : "dmo:{{row.childDirectory}}" 
+    "@id" : "dmo:{{row.childDirectory}}"     
   }],
 
   "dmo:hasFilesNum": [{
   	"@value": "{{row.NumOfFilesInside}}",
-  	"@type": "xsd:integer"
+  	"rdf:type": "xsd:integer"
   	}],
 
 
 "dmo:hasFile": [{
   	"@if" : "not isempty(row.FilePathsInsideCurr)",
     "@for" : "fileName in row.FilePathsInsideCurr.split(',')",
-    "@do" : { "@id" : "dmo:{{fileName}}", "@type": "dmo:File"}
+    "@do" : { "@id" : "dmo:{{fileName}}", "rdf:type": "dmo:File"}
   	}],
+
+
+"ore:aggregates": [{
+    "@if" : "not isempty(row.FilePathsInsideCurr)",
+    "@for" : "fileName in row.FilePathsInsideCurr.split(',')",
+    "@do" : { "@id" : "dmo:{{fileName}}", "rdf:type": "dmo:File"}
+    }],
 
 
   	"dmo:isSubDirectoryOf": [{

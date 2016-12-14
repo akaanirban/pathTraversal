@@ -23,9 +23,11 @@ prov:used <graphFilePath.csv>;
     prov:used :table;
     setl:hasContext '''{
   "foaf" : "http://xmlns.com/foaf/0.1/",
-  "dmo"  : "http://dmo.org/terms/",
+  "dmo"  : "http://dmo.org/",
   "xsd"  : "http://www.w3.org/2001/XMLSchema#",
-  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+  "rdf"  : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "ore" : "http://www.openarchives.org/ore/terms/"
 }''';
 
     prov:value '''[
@@ -35,11 +37,19 @@ prov:used <graphFilePath.csv>;
   "@type": "dmo:File",
   "dmo:FileType" : "{{row.FileTypes}}",
   "rdfs:Label": "{{row.FileName}}",
+  "rdf:type" : [{
+                "@if" : "not isempty(row.ResourceFileFlag)",
+                "@value" : "ore:Resourcemap"
+        }, {
+            "@if" : "isempty(row.ResourceFileFlag)",
+            "@value" :"dmo:Result"}],
 
   "dmo:belongsTo": [{
     "@if" : "not isempty(row.CurrentDirectoryName)",
     "@id" : "dmo:{{row.CurrentDirectoryName}}"
   }],
+
+
 
   "dmo:isResultOf": [{
     "@if" : "not isempty(row.CouponName)",
@@ -52,7 +62,7 @@ prov:used <graphFilePath.csv>;
 
 
 
-<instanceLevel.ttl> a pv:File;
+<instanceLevelDomain.ttl> a pv:File;
     dcterms:format "text/turtle";
     prov:wasGeneratedBy [
       a setl:Load;

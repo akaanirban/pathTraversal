@@ -36,14 +36,13 @@ prov:used <graphDirectory.csv>;
   "@id": "dmo:{{row.currentDirectory}}",
   "@type": "dmo:Directory",
   "rdfs:Label": "{{row.currLabel}}",
-  "@if" : "not isempty(row.Depth)",
-  "rdf:type": ["dmo:{{row.Depth}}" , "ore:Aggregation"],
-  
+  "rdf:type" : "ore:Aggregation" ,
 
-  "dmo:hasResult": [{
+
+  "dmo:hasSubDirectory": [{
   	"@if" : "not isempty(row.childDirectory)",
     "@id" : "dmo:{{row.childDirectory}}"
-    }],
+  }],
 
   "dmo:hasFilesNum": [{
   	"@value": "{{row.NumOfFilesInside}}",
@@ -57,11 +56,13 @@ prov:used <graphDirectory.csv>;
     "@do" : { "@id" : "dmo:{{fileName}}", "rdf:type": "dmo:File"}
   	}],
 
+
 "ore:aggregates": [{
     "@if" : "not isempty(row.FilePathsInsideCurr)",
     "@for" : "fileName in row.FilePathsInsideCurr.split(',')",
     "@do" : { "@id" : "dmo:{{fileName}}", "rdf:type": "dmo:File"}
     }],
+
 
   	"dmo:isSubDirectoryOf": [{
   	"@if" : "not isempty(row.parentDirectory)",

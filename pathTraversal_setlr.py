@@ -84,6 +84,13 @@ def setNamesOfFilesinParamsTTl(pathOfParamTTl, nameOfParamTTl, nameOfCSV, nameOf
         fp.write(i)
     fp.close()
 
+def invokeSetlr(rawArchiveParam, rawArchiveDomainparam, instanceLevelDomainParam):
+    os.chdir(os.path.join(os.path.dirname(__file__), "Results"))
+    setlr.mainFunc("setlr_params.ttl")
+    setlr.mainFunc("setlr_params_domain.ttl")
+    setlr.mainFunc("setlr_params_instancelevel.ttl")
+
+
 #==============================================================================
 
 
@@ -105,7 +112,8 @@ if __name__ == "__main__":
     nameOfInstanceCSV = 'graphFilePath.csv'
     instanceCSV_file_path = os.path.join(current_file_dir, "Results", nameOfInstanceCSV)
     archiveTTL = "rawArchive.ttl"
-    instanceLevelTTL = "instanceLevel.ttl"
+    archiveInstanceTTL = "rawArchiveDomain.ttl"
+    instanceLevelTTL = "instanceLevelDomain.ttl"
     rootDirectory= sys.argv[1]
     headerSetFlag = False
     cleanedList = []
@@ -116,7 +124,7 @@ if __name__ == "__main__":
     #creating the header row
     
     headerRow = ["FullFilePath","FileTypes", "CurrentDirectoryName","SeriesName",\
-                 "AllFileList", "CouponName", "Series","Panel", "Coupon"]
+                 "FileName", "CouponName", "Series","Panel", "Coupon", 'ResourceFileFlag']
     
     #============================================================================== 
     
@@ -137,11 +145,11 @@ if __name__ == "__main__":
                 temp = (dirName+os.path.sep).count(os.path.sep)
                 if(oneTimeFlag == True ):
                     dirDepth = dirName.count(os.path.sep)
-                    currDepth = 'root'
+                    currDepth = 'Root'
                 if(temp - dirDepth == 1 and oneTimeFlag == False):
-                    currDepth = 'experiment'
+                    currDepth = 'Experiment'
                 if(temp - dirDepth >= 2 and oneTimeFlag == False):
-                    currDepth = 'result' 
+                    currDepth = 'Result' 
                 oneTimeFlag = False
                 if depth >1:
                     isOfSubDir = (os.path.sep).join((dirName.rstrip(os.path.sep).split(os.path.sep)[:-1])) #the parent directory
@@ -164,9 +172,9 @@ if __name__ == "__main__":
                     if(dirName[-1] != os.path.sep):
                         temp = (dirName+os.path.sep).count(os.path.sep)
                         if(temp - dirDepth == 1):
-                            currDepth = 'experiment'
+                            currDepth = 'Experiment'
                         if(temp - dirDepth >= 2):
-                            currDepth = 'result' 
+                            currDepth = 'Result' 
                     depth = len(dirName.rstrip(os.path.sep).split(os.path.sep))
                     currLabel = dirName.rstrip(os.path.sep).split(os.path.sep)[-1]#current directory label
                     filePathForSD = getFullFilePath(imFileList, dirName) #get full path names for files.
@@ -193,9 +201,11 @@ if __name__ == "__main__":
                     currentDirName = dirName.rstrip(os.path.sep).split(os.path.sep)[-1].strip().replace(' ','_')
                     couponName = getCouponName(fileName)
                     splitcoupon = couponName.split('-') if len(couponName) != 0 else ['','','']
+                    ##############manually select which are resource files (here SUMMARY files are in this use case)################
+                    ResourceFileFlag = "True" if ((".xls" in fileName.lower() and "summary" in fileName.lower()) or ".txt" in fileName.lower()) else ""
                     cleanedList = [filePath.strip().replace('\\','/'), getFileTypes(fileName),  dirName.strip().replace('\\','/'),\
                                    getSeries(dirName),fileName.strip().replace(' ','_'), couponName, str(splitcoupon[0]),\
-                                    str(splitcoupon[1]), str(splitcoupon[2])]
+                                    str(splitcoupon[1]), str(splitcoupon[2]), ResourceFileFlag]
                     if(len(couponName)>0):             
                         splitcoupon.insert(0,couponName)
                     if (len(cleanedList) != 0):
@@ -211,15 +221,21 @@ if __name__ == "__main__":
     print("1. For Directory Structure  - {} \n2. For FileStructure Associated with domain knowledge - {}".format(nameOfDirectoryCSV,nameOfInstanceCSV))
     print("Invoking Setlr")
     #setlr.mainFunc("setlr_params.ttl")
-    archive_file_path = os.path.join(current_file_dir, "params", "setlr_params_domain.ttl")
+    archive_file_path = os.path.join(current_file_dir, "params", "setlr_params.ttl")
+    archivedomain_file_path = os.path.join(current_file_dir, "params", "setlr_params_domain.ttl")
     instance_file_path = os.path.join(current_file_dir, "params", "setlr_params_instancelevel.ttl")
-    setNamesOfFilesinParamsTTl(archive_file_path, "setlr_params_domain.ttl",  nameOfDirectoryCSV, archiveTTL )
+    setNamesOfFilesinParamsTTl(archive_file_path, "setlr_params.ttl",  nameOfDirectoryCSV, archiveTTL )
+    setNamesOfFilesinParamsTTl(archivedomain_file_path, "setlr_params_domain.ttl",  nameOfDirectoryCSV, archiveInstanceTTL )
     setNamesOfFilesinParamsTTl(instance_file_path, "setlr_params_instancelevel.ttl", nameOfInstanceCSV, instanceLevelTTL )
-    setlr.mainFunc(os.path.join(os.path.dirname(__file__), "Results", "setlr_params_domain.ttl"))
-    setlr.mainFunc(os.path.join(os.path.dirname(__file__), "Results", "setlr_params_instancelevel.ttl"))
+    #setlr.mainFunc(os.path.join(os.path.dirname(__file__), "Results", "setlr_params.ttl"))
+    #setlr.mainFunc(os.path.join(os.path.dirname(__file__), "Results", "setlr_params_domain.ttl"))
+    #setlr.mainFunc(os.path.join(os.path.dirname(__file__), "Results", "setlr_params_instancelevel.ttl"))
+    #call setlr
+    resultsPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Results")
+    invokeSetlr("setlr_params.ttl", "setlr_params_domain.ttl", "setlr_params_instancelevel.ttl")
     sleep(5)
-    fp = open(os.path.join(os.path.dirname(__file__), "Results", instanceLevelTTL), "a")
-    fd = open(os.path.join(os.path.dirname(__file__), "Results", archiveTTL), "r")
+    fp = open(os.path.join(resultsPath, instanceLevelTTL), "a")
+    fd = open(os.path.join(resultsPath, archiveInstanceTTL), "r")
     # #join the two turtle files together
     lines = fd.readlines()
     for i in range(2):
@@ -227,9 +243,10 @@ if __name__ == "__main__":
     for line in lines:
         if line[0]!='@':
             fp.write(line)
-            fp.write("\n")
+            #fp.write("\n")
     fp.close()
     fd.close()
 	#==================================
-    print("Conversion done, rdf turtle file for folder structure : graphDirectory.ttl")
-    print("Conversion done, rdf turtle file for domain instance level map : graphDirectoryInstance.ttl")
+    print("Conversion done, rdf turtle file for raw folder structure : {}".format(archiveTTL))
+    print("Conversion done, rdf turtle file for raw folder structure with domain level map : {}".format(archiveInstanceTTL))
+    print("Conversion done, rdf turtle file for domain instance level map : {}".format(instanceLevelTTL))
